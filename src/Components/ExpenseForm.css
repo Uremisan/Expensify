@@ -1,0 +1,101 @@
+.wrapper {
+  padding: 2px 2px;
+
+}
+.wrapper h1 {
+  color: black;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 2em;
+  width: 70%;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-left: 2em;
+  background-color: #d6cad6; 
+}
+
+
+#cag1{
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  width: 90%;
+  border-radius: 0.5em;
+}
+.wrap h1{
+  color: black;
+  text-align: center;
+}
+h4 {
+  color: black;
+  font-weight: bold;
+}
+
+
+.wrapper fieldset {
+  margin: 2px ;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.wrapper fieldset label{
+  padding-right: 10px;
+}
+.wrapper  .check {
+  margin: 1px 0;
+  color: black;
+  font-size: 17px;
+}
+
+
+body {
+  background-color: #aec477;
+  padding: 20px;
+  font-family: monospace;
+  text-align: start;
+  background-image: url(../image/joe-woods-4Zaq5xY5M_c-unsplash.jpg);
+  background-size: 1200px;
+  
+}
+#textboxid {
+  height: 60px;
+  width: 90%;
+  border-radius: 0.5em;
+}
+#b100 {
+  margin-left: 15em;
+  margin-top: 2em;
+}
+#b1 {
+  background-color: #4a958e;
+  border-radius: 0em;
+  padding: 0.2em 0.2em;
+  margin-right: 3px;
+
+}
+
+#b2 {
+  background-color: #cb3031;
+  border-radius: 0em;
+  padding: 0.2em 0.2em;
+}
+
+button {
+display:inline-block;
+padding:0.5em 1em;
+border-radius:05em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:monospace;
+font-weight:300;
+color:#FFFFFF;
+background-color:#3b8da5;
+text-align:center;
+}
+
+
+#textboxid2 {
+  height: 60px;
+  width: 90%;
+  border-radius: 0.5em;
+}
+
