@@ -1,8 +1,17 @@
 import React from 'react';
 import ExpenseItem from './ExpenseItem';
 import { connect } from 'react-redux';
+import { getAllUsersAction } from '../actions/userActions';
 
-class ExpenseList extends React.Component{ 
+class ExpenseList extends React.Component{
+  constructor(props){
+    super(props)
+}
+
+componentDidMount(){//display all users when the component mounts
+  this.props.getAllUsersAction()
+}
+
   render(){
   return (
     <div className="wrap">
@@ -21,5 +30,8 @@ const mapStateToProps = (state) =>{
   usersData: state.users
 }
 }
+const mapDispatchToProps = {
+  getAllUsersAction,
+}
 
-export default connect (mapStateToProps)(ExpenseList);
+export default connect (mapStateToProps, mapDispatchToProps)(ExpenseList);
