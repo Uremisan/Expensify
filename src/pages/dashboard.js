@@ -4,8 +4,15 @@ import ExpenseItem from '../Components/ExpenseItem';
 import { useState} from 'react';
 import Editform from '../Components/Editform';
 import React from 'react';
+import { logout } from '../actions/authActions';
+import { connect } from 'react-redux';
+
 
 class Dashboard extends React.Component{
+  //Logout section
+  handleLogout = () => {
+    this.props.logout();
+  }
 
   render(){
     return (
@@ -13,6 +20,8 @@ class Dashboard extends React.Component{
         <div className = "col-md-6 userinput">
 
           <ExpenseForm addUser = {this.addUser} /> 
+          <br></br>
+          <button onClick={this.handleLogout}>Log out</button>
         </div>
         
         <div className = "col-md-6 Notelist">
@@ -25,5 +34,8 @@ class Dashboard extends React.Component{
   }
 
 }
-export default Dashboard;
+
+const mapDispatchToProps = {logout}
+
+export default connect (null, mapDispatchToProps) (Dashboard);
 
