@@ -18,8 +18,12 @@ class login extends React.Component {
     });
   }
 
-  handleSubmit = (props) => {
-    this.props.Login(this.state.email, this.state.password);
+  handleOnSubmit = () => {
+    this.props.Login(this.state.email, this.state.password)
+    this.setState({
+      email : '',
+      password : ''
+  })
   }
 
   render ()
@@ -30,7 +34,7 @@ class login extends React.Component {
     }
 
     if (this.props.auth.isEmpty === false) {
-      return <Redirect path = "/" />;
+      return <Redirect path = '/' />
     }
 
     return (
@@ -47,7 +51,7 @@ class login extends React.Component {
         </fieldset>
 
         <div>
-        <br /><button type="button" onClick={this.handleSubmit}>Log in</button><br />
+        <br /><button type="button" onClick={this.handleOnSubmit}>Log in</button><br />
         </div>
       </form>
     )

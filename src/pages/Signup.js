@@ -32,7 +32,7 @@ class signup extends React.Component {
     }
   
     if (this.props.auth.isEmpty === false) {
-      return <Redirect path = "/" />;
+      return <Redirect path = '/' />;
     }
 
     return (
