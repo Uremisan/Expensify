@@ -56,6 +56,10 @@ class login extends React.Component {
 }
 
 const mapDispatchToProps = { Login };
-
+const mapStateToProps = (state) =>{
+  return {
+  auth : state.firebaseState.auth
+  }
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(login);
