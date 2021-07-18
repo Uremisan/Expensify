@@ -28,7 +28,7 @@ export function Login(email, password) {
   };
 }
 
-//login section 
+//logout section 
 export function logout() {
   return async (dispatch, state, {getFirebase }) => 
     { 
