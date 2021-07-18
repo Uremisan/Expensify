@@ -5,7 +5,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ProtectedRoute from './Components/ProtectedRoute';
-import Display from './pages/Display';
+
 
 
 class App extends React.Component{
@@ -14,10 +14,9 @@ class App extends React.Component{
     return (
       <BrowserRouter>
       <Switch>
-        <ProtectedRoute path ="/dashboard" exact component={Dashboard}/>
-        <Route path ="/login" component={Login}></Route>
-        <Route path = "/signup" component={Signup}></Route>
-        <Route exact path = '/' component = {Display}/>
+        <ProtectedRoute exact path = '/' component={Dashboard}/>
+        <Route path = '/login' component={Login}/>
+        <Route path = '/signup' component={Signup}/>
       </Switch>
       </BrowserRouter>
   
